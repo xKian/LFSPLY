@@ -1,0 +1,250 @@
+.align {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+
+.grid {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: var(--gridMaxWidth);
+  width: var(--gridWidth);
+}
+
+:root {
+  --bodyFontFamily: 'Helvetica Neue';
+  --bodyFontFamilyFallback: sans-serif;
+  --bodyLineHeight: 1.5;
+}
+
+
+body {
+  font-family: var(--bodyFontFamily), var(--bodyFontFamilyFallback);
+  font-size: var(--bodyFontSize);
+  font-weight: var(--bodyFontWeight);
+  line-height: var(--bodyLineHeight);
+  margin: 0;
+}
+
+
+a {
+  outline: 0;
+  text-decoration: none;
+  transition: color .3s, background-color .3s;
+}
+
+
+:root {
+  --h1FontSize: 42px;
+  --h1FontFamily: 'Norican';
+  --h1FontFamilyFallback: cursive;
+  --h1FontWeight: 400;
+  --h1MarginBottom: 24px;
+  --h1TextTransform: lowercase;
+}
+
+:root {
+
+  --navigationMainBorderRadius: .25rem;
+  --navigationMainFontSize: .75rem;
+  --navigationMainFontWeight: bold;
+  --navigationMainPaddingHorizontal: 1.25rem;
+  --navigationMainPaddingVertical: .75rem;
+  --navigationMainTextTransform: uppercase;
+  --navigationMainLinkBorderRadius: .125rem;
+  --navigationMainLinkColor: #999;
+  --navigationMainLinkPaddingHorizontal: .75rem;
+  --navigationMainLinkPaddingVertical: .5rem;
+  --navigationMainLinkHoverBackgroundColor: #f43958;
+  --navigationMainLinkHoverColor: #fff;
+}
+
+.navigation ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation a {
+  display: block;
+}
+
+.navigation--inline ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.navigation--inline li {
+  flex-grow: 1;
+}
+
+
+.navigation--main::before {
+  border-bottom: .25rem solid var(--navigationMainBackgroundColor);
+  border-left: .25rem solid transparent;
+  border-right: .25rem solid transparent;
+  bottom: 100%;
+  content: '';
+  left: 50%;
+  position: absolute;
+  transform: translateX(-50%);
+}
+
+.navigation--main li {
+  margin: var(--navigationMainItemMargin);
+}
+
+.navigation--main a {
+  border-radius: var(--navigationMainLinkBorderRadius);
+  color: white;
+  padding: var(--navigationMainLinkPaddingVertical)
+}
+
+.navigation--main a:focus,
+.navigation--main a:hover {
+  background-color: var(--navigationMainLinkHoverBackgroundColor);
+  color: var(--navigationMainLinkHoverColor);
+}
+
+.text--center {
+  text-align: center;
+}
+      
+body{
+  background-color: #fff;
+}
+
+.container {
+    background-color: white;
+    padding-top: 20px;
+}
+
+.navigation {
+    border-radius: 0px;
+    text-align: center;
+    padding-top: 7px;
+}
+   
+h6 {
+    color: black;
+}
+      
+.wrapper {
+    width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    padding-left: 84px;
+}
+
+.clear {
+    clear: both;
+}
+.items {
+    display: block;
+    margin: 20px 0;
+}
+.item {
+    background-color: #fff;
+    float: left;
+    margin: 0 10px 10px 0;
+    width: 205px;
+    padding: 10px;
+    height: 290px;
+}
+.item img {
+    display: block;
+    margin: auto;
+}
+h2 {
+    font-size: 16px;
+    color: white;
+    display: block;
+    border-bottom: 1px solid #ccc;
+
+}
+button {
+    border: 1px solid #722A1B;
+    padding: 4px 14px;
+    background-color: #fff;
+    color: #722A1B;
+    text-transform: uppercase;
+    margin: 5px 0;
+    font-weight: bold;
+    cursor: pointer;
+}
+span {
+    float: right;
+}
+
+.add-to-cart {
+    border: 1px solid #722A1B;
+    padding: 2px 10px;
+    background-color: #fff;
+    color: #722A1B;
+    text-transform: uppercase;
+    margin: 4px 0;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+textarea {
+	resize: none;
+}
+.form-label {
+    text-align: center;
+	font-size: 20px;
+	color: #fff;
+	display: block;
+
+}
+
+.form-control {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    z-index: 2;
+}
+.form-control:focus {
+	box-shadow: none;
+	border-color: #5e9bfc;
+}
+.js-hide-label {
+	opacity: 0; 	
+}
+.js-unhighlight-label {
+	color: #999 
+}
+.btn-start-order {
+	background: 0 0 #ffffff;
+    border: 1px solid #2f323a;
+    border-radius: 3px;
+    color: #2f323a;
+    font-family: "Raleway", sans-serif;
+    font-size: 16px;
+    line-height: inherit;
+    margin: 30px 0;
+    padding: 10px 50px;
+    text-transform: uppercase;
+    transition: all 0.25s ease 0s;
+}
+.btn-start-order:hover,.btn-start-order:active, .btn-start-order:focus {
+	border-color: #5e9bfc;
+	color: #5e9bfc;
+}
+.contact-form {
+    text-align: center;
+}
+
+
+
+#subject, #name, #email, #message {
+    font-size: 17px;
+}
+
+
+.logo {
+    margin-left: 745px;
+}
+
